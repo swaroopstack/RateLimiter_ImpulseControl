@@ -53,9 +53,9 @@ int main() {
 
     for (int i = 1; i <= 10; ++i) {
         if (limiter.allowRequest()) {
-            cout << "✅ Request " << i << " ALLOWED.\n";
+            cout << "Request " << i << " ALLOWED.\n";
         } else {
-            cout << "🚫 Request " << i << " BLOCKED (Too many requests!)\n";
+            cout << "Request " << i << " BLOCKED (Too many requests!)\n";
         }
         std::this_thread::sleep_for(std::chrono::milliseconds(700));  // simulate request timing
     }
